@@ -1,5 +1,5 @@
 ### Html Development Environment with Bulma/Sass/Fontawesome 
-Everything is presetup for basic frontend development with Bulma. What you should do is
+Everything is preset for basic frontend development with Bulma. What you should do is
 to run sass in bulma directory with the command: 
 
     sass --watch bulma.sass:bulma.css
