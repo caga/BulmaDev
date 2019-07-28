@@ -1,1 +1,2 @@
-" hehe
+#ignore sass-cache files
+/bulma/.sass-cache/*
