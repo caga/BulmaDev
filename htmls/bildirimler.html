@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bulma/bulma.css" type="text/css" media="all">
+<link rel="import" href="htmls/bildirimler.html">
+    <script src="../fontawesome/all.js" charset="utf-8"></script>
+    <title>Bildirimler</title>
+  <script>
+    function addImportLink(url) {
+      var link = document.createElement('link');
+      link.rel = 'import';
+      link.href = url;
+      link.onload = function(e) {
+        var post = this.import.querySelector('#blog-post');
+
+        var container = document.querySelector('#container');
+        container.appendChild(post.cloneNode(true));
+      };
+      document.head.appendChild(link);
+    }
+
+    addImportLink('/path/to/import.html'); // Import is added early :)
+  </script>
+  </head>
+  <body>
+    <div id="container"></div>
+    body
+  </body>
+</html>
